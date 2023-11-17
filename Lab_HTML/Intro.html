@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Intro
+    </title>
+</head>
+<body>
+    <table border="3">
+        <tr>
+            <th colspan="3">About--112306004</th>
+        </tr>
+        <tr>
+            <td rowspan="3">
+                <img src="book.jpg" alt="Personal Photo" width="100">
+                <br>
+                Personal Photo
+            </td>
+
+            <td colspan="2" Name:>
+               
+                
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                
+        
+                <br>Gender:
+                
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="other">Other</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                
+          </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="county">County:</label>
+                <select id="county" name="county">
+                    <option value="taipei">Taipei</option>
+                    <option value="tainan">Tainan</option>
+                    <option value="taichung">Taichung</option>
+                    <option value="taoyuan">Taoyuan</option>
+                </select>
+            </td>
+            
+            <td>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com">
+            </td>
+        </tr>
+        <tr>
+            <td>Hobby</td>
+            <td colspan="2">
+                <input type="checkbox" id="swimming" name="hobby" value="swimming">
+                <label for="swimming">Swimming</label>
+                <input type="checkbox" id="volleyball" name="hobby" value="volleyball">
+                <label for="volleyball">Volleyball</label>
+                <input type="checkbox" id="movie" name="hobby" value="movie">
+                <label for="movie">Movie</label>
+                <input type="checkbox" id="game" name="hobby" value="game">
+                <label for="game">Game</label>
+                <input type="checkbox" id="sleep" name="hobby" value="sleep">
+                <label for="sleep">Sleep</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Skill</td>
+            <td colspan="2">
+                <input type="checkbox" id="java" name="skill" value="java">
+                <label for="java">Java</label>
+                <input type="checkbox" id="html" name="skill" value="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="python" name="skill" value="python">
+                <label for="python">Python</label>
+                <input type="checkbox" id="office" name="skill" value="office">
+                <label for="office">Microsoft Office</label>
+                <input type="checkbox" id="premiere" name="skill" value="premiere">
+                <label for="premiere">Premiere</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Say something</td>
+            <td colspan="2">
+                <textarea id="saySomething" name="saySomething" placeholder="Say something here."></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type = "submit" value = "submit">
+                <input type = "reset" value = "clear">
+            </td>
+        </tr>
+    </table>
+</body>
