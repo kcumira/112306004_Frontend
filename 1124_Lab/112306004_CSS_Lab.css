@@ -1,0 +1,89 @@
+body {
+        color: #333;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        /* Reset margin to zero */
+}
+
+
+
+.container {
+        background-color: #e0e0e0;
+        /* Background color for heading and paragraphs */
+        padding: 10px;
+        /* Add some padding for better readability */
+        text-align: center;
+        /* Center the paragraphs */
+        margin: 0;
+        /* Reset margin to zero */
+}
+
+#centered-heading {
+        text-align: center;
+}
+
+.navbar {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        /* Distribute items evenly */
+        background-color: #a0a0a0;
+        /* Background color for the four options */
+        padding: 10px;
+        /* Add some padding for better readability */
+        margin: 0;
+        /* Reset margin to zero */
+}
+
+.navbar li {
+        position: relative;
+        cursor: pointer;
+}
+
+/* Added styles for text color change and dropdown */
+.navbar li:hover {
+        color: #0078d7;
+        /* Change text color on hover */
+}
+
+.dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #ffffff;
+        /* Set the background color to black */
+        color: black;
+        /* Set the text color to white */
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        list-style-type: none;
+}
+
+.dropdown li {
+        margin: 10px 0;
+        /* Adjust the margin between dropdown choices */
+}
+
+.navbar li:hover .dropdown {
+        display: block;
+}
+
+@media screen and (max-width: 700px) {
+        .navbar {
+                flex-wrap: wrap;
+                /* Allow items to wrap onto multiple lines */
+                text-align: center;
+                /* Center items within each row */
+        }
+
+        .navbar li {
+                width: 100%;
+                /* Make each option take up full width */
+                box-sizing: border-box;
+                /* Include padding and border in width calculation */
+                margin: 5px 0;
+                /* Add some margin between rows */
+        }
+}
