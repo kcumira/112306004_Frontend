@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e6e6e6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 2%;
+            border-radius: 8px;
+            width: 50%;
+            margin: 0 auto;
+            overflow: hidden;
+            /* Clear the float */
+        }
+
+        .form-group {
+            margin-bottom: 2%;
+            box-sizing: border-box;
+            padding: 1%;
+            overflow: hidden; /* Clear the float */
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 1%;
+            color: #333333;
+            /* Text color */
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 2%;
+            box-sizing: border-box;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            /* Add margin to separate input and textarea */
+            font-size: 16px;
+            /* Font size */
+        }
+
+        .form-group textarea {
+            resize: none;
+            /* Make textarea not resizable */
+        }
+
+        .form-footer {
+            margin-top: 2%;
+            text-align: center;
+        }
+
+        .form-footer a {
+            color: #4caf50;
+            text-decoration: none;
+            font-size: 14px;
+            /* Font size */
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .form-image {
+            width: 90%; /* Adjusted image size */
+            /* Set the width for the image */
+            height: auto;
+            /* Maintain aspect ratio for the image */
+        }
+
+        /* Clearfix */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Two columns for the second row */
+        .two-columns {
+            width: 50%;
+            float: left;
+        }
+
+        /* Smaller height for Username and Password blocks */
+        .small-height {
+            height: 100px;
+        }
+
+        /* Center the label for the image */
+        .image-label {
+            text-align: left;
+            width: 100%;
+            float: left;
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Form Example</title>
+</head>
+
+<body>
+
+    <div class="form-container clearfix">
+        
+        <div class="form-group small-height">
+            <label for="username">input1</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+
+        <div class="form-group two-columns">
+            <label for="field1">input2</label>
+            <input type="text" id="field1" name="field1" placeholder="Enter Field 1">
+        </div>
+
+        <div class="form-group two-columns">
+            <label for="field2">input3</label>
+            <input type="text" id="field2" name="field2" placeholder="Enter Field 2">
+        </div>
+
+        <div class="form-group small-height">
+            <label for="password">input4</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+
+        <div class="form-group">
+            <label for="message">textarea</label>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="4"></textarea>
+        </div>
+
+        <div class="image-label">
+            <label for="form-image">Picture1</label>
+        </div>
+        
+        <img class="form-image" src="sea.jpg" alt="Placeholder Image">
+        
+        
+
+    </div>
+
+</body>
+
+</html>
