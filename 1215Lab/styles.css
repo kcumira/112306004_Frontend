@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adjust the gap between buttons */
+}
+
+.zoom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.zoom-button:hover {
+    transform: scale(1.1);
+}
+
+/* External CSS to change button colors */
+.green-button {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.blue-button {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.red-button {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.orange-button {
+    background-color: #e67e22;
+    color: #fff;
+}

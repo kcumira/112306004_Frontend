@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zooming Buttons</title>
+</head>
+
+<body>
+
+    <h1>Hello</h1>
+
+
+    <div class="button-container">
+
+        <button class="zoom-button red-button" onclick="alert(n1);">first number</button>
+        <button class="zoom-button orange-button" onClick="alert(n2);">second number</button>
+        <button class="zoom-button blue-button" onclick="document.body.style.backgroundColor = 'blue';">blue</button>
+        <button class="zoom-button green-button" onclick="document.body.style.backgroundColor = 'green';">green</button>
+        <button class="zoom-button reset-button"
+            onClick="alert('reset');document.body.style.backgroundColor = '#f4f4f4';">Reset color</button>
+
+    </div>
+
+    <script>
+        var n1 = window.prompt("first number");
+        var n2 = window.prompt("second number");
+        if (n1 > n2) {
+            document.body.style.backgroundColor = 'lightblue';
+            document.writeln(n1 + " > " + n2);
+        } else if (n1 < n2) {
+            document.body.style.backgroundColor = 'orange';
+            document.writeln(n1 + " < " + n2);
+        } else {
+            document.body.style.backgroundColor = 'lightyellow';
+            document.writeln(n1 + " == " + n2);
+        }
+    </script>
+
+
+
+</body>
+
+</html>
