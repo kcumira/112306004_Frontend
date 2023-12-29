@@ -37,6 +37,7 @@
 
         var die1Image, die2Image, die3Image, die4Image, die5Image, die6Image, die7Image, die8Image, die9Image, die10Image, die11Image, die12Image;
         var count1 = 0, count2 = 0, count3 = 0, count4 = 0, count5 = 0, count6 = 0;
+        var fre1 = 0,fre2 = 0,fre3 = 0,fre4 = 0,fre5 = 0,fre6 = 0;
 
         function start() {
             var button = document.getElementById("rollButton");
@@ -89,21 +90,27 @@
             switch (dieValue) {
                 case 1:
                     count1++;
+                    fre1++;
                     break;
                 case 2:
                     count2++;
+                    fre2++;
                     break;
                 case 3:
                     count3++;
+                    fre3++;
                     break;
                 case 4:
                     count4++;
+                    fre4++;
                     break;
                 case 5:
                     count5++;
+                    fre5++;
                     break;
                 case 6:
                     count6++;
+                    fre6++;
                     break;
             }
 
@@ -129,30 +136,38 @@
         <tr>
             <td>Face</td>
             <td>Percent</td>
+            <td>Frequency</td>
         </tr>
         <tr>
             <td>1</td>
             <td></td>
+            <td>fre1</td>
         </tr>
         <tr>
             <td>2</td>
             <td></td>
+            <td>fre2</td>
         </tr>
         <tr>
             <td>3</td>
             <td></td>
+            <td>fre3</td>
         </tr>
         <tr>
             <td>4</td>
             <td></td>
+            <td>fre4</td>
         </tr>
         <tr>
             <td>5</td>
             <td></td>
+            <td>fre5</td>
         </tr>
         <tr>
             <td>6</td>
             <td></td>
+            <td>fre6</td>
+
         </tr>
     </table>
 
